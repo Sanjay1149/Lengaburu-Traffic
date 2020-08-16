@@ -39,7 +39,7 @@ public class Geektrust {
             /**
              *  Reading Input from the Input File
              */
-            FileInputStream inputStream = new FileInputStream("/home/ydsanjay/IdeaProjects/LengaburuTraffic/src/Computing/input.txt");
+            FileInputStream inputStream = new FileInputStream(new File("src/Computing/input.txt").getAbsolutePath());
             BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
             String[] input =  br.readLine().split(" ");
             inputStream.close();
@@ -96,7 +96,7 @@ public class Geektrust {
             /**
              *  Writing to the Output File
              */
-            BufferedWriter fileOut = new BufferedWriter(new FileWriter("/home/ydsanjay/IdeaProjects/LengaburuTraffic/src/Computing/output.txt"));
+            BufferedWriter fileOut = new BufferedWriter(new FileWriter(new File("src/Computing/output.txt").getAbsolutePath()));
             fileOut.write(bestVehicle.getType() + " " + bestVehicle.getOrbitName());
             fileOut.close();
 

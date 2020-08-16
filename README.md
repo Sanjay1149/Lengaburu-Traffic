@@ -15,6 +15,6 @@ run the Geektrust.java file
 ```bash
 Output will be written in the output.txt file
 ```
-#Reference
+##Reference
 
 Github link for the solution is [here](https://github.com/Sanjay1149/Lengaburu-Traffic);
