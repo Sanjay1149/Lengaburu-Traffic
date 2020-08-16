@@ -7,6 +7,10 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author Sanjay Pradeep
+ */
+
 public class Geektrust {
     public static Map<String, Map<String,Integer>> vehicleDetails = new HashMap<>();
     public static Vehicle bestVehicle;

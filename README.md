@@ -1,6 +1,6 @@
 # Lengaburu Traffic
 
-This is a repository which includes the solution for solving the Backend [Geektrust coding problems](https://www.geektrust.in/coding-problem/backend/traffic) .
+This is a repository that includes the solution for solving the Backend [Geektrust coding problems](https://www.geektrust.in/coding-problem/backend/traffic) .
 
 ## Input
 
