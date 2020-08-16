@@ -6,7 +6,7 @@ public class Vehicle {
     int mmHr;
     int craterCross;
     String type;
-    int timeTakenToCross;
+    float timeTakenToCross;
     Orbit orbit;
     String orbitName;
 
@@ -18,9 +18,9 @@ public class Vehicle {
         this.type = type;
     }
 
-    public int getTimeTakenToCross() {
-        int timeTakenToCrossMm = ( 60 / Math.min( mmHr, orbit.getMaxSpeed() ) ) * orbit.getSpeedRequired();
-        int timeTakenToCrossCrater = craterCross * orbit.getCraters();
+    public float getTimeTakenToCross() {
+        float timeTakenToCrossMm = ( (float) 60 / Math.min( mmHr, orbit.getMaxSpeed() ) ) * orbit.getSpeedRequired();
+        float timeTakenToCrossCrater = craterCross * orbit.getCraters();
         timeTakenToCross = timeTakenToCrossMm + timeTakenToCrossCrater;
         return timeTakenToCross;
     }

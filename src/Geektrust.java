@@ -10,7 +10,7 @@ import java.util.Map;
 public class Geektrust {
     public static Map<String, Map<String,Integer>> vehicleDetails = new HashMap<>();
     public static Vehicle bestVehicle;
-    public static int timeTaken = Integer.MAX_VALUE;
+    public static float timeTaken = Integer.MAX_VALUE;
 
     public static void initializeVehicleDetails() {
         Map<String,Integer> carDetails = new HashMap<>();
@@ -31,7 +31,7 @@ public class Geektrust {
 
     public static void main(String[] args) {
         String filePath = args[0];
-        int timeTakenToCross;
+        float timeTakenToCross;
         /**
          * Initializing the Vehicle Details
          */
@@ -70,7 +70,6 @@ public class Geektrust {
 
                 Vehicle vehicleOrbit1 = new Vehicle(vehicleMmHr,vehicleCross,orbit1,"ORBIT1",vehicle);
                 timeTakenToCross = vehicleOrbit1.getTimeTakenToCross();
-//                System.out.println(vehicleOrbit1.getType() + " takes " + timeTakenToCross);
                 /**
                  *  Checking if Orbit1 for this vehicle is the Fastest Route to cross
                  */
@@ -81,7 +80,6 @@ public class Geektrust {
 
                 Vehicle vehicleOrbit2 = new Vehicle(vehicleMmHr,vehicleCross,orbit2,"ORBIT2",vehicle);
                 timeTakenToCross = vehicleOrbit2.getTimeTakenToCross();
-//                System.out.println(vehicleOrbit2.getType() + " takes " + timeTakenToCross);
                 /**
                  *  Checking if Orbit2 for this vehicle is the Fastest Route to cross
                  */
