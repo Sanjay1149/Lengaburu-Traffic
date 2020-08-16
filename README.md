@@ -1,6 +1,6 @@
 # Lengaburu Traffic
 
-Lengaburu Traffic is a GeekTrust Problem
+This is a repository which includes the solution for solving the Backend [Geektrust coding problems](https://www.geektrust.in/coding-problem/backend/traffic) .
 
 ## Input
 
@@ -15,3 +15,6 @@ run the Geektrust.java file
 ```bash
 Output will be written in the output.txt file
 ```
+#Reference
+
+Github link for the solution is [here](https://github.com/Sanjay1149/Lengaburu-Traffic);
