@@ -70,7 +70,7 @@ public class Geektrust {
 
                 Vehicle vehicleOrbit1 = new Vehicle(vehicleMmHr,vehicleCross,orbit1,"ORBIT1",vehicle);
                 timeTakenToCross = vehicleOrbit1.getTimeTakenToCross();
-                System.out.println(vehicleOrbit1.getType() + " takes " + timeTakenToCross);
+//                System.out.println(vehicleOrbit1.getType() + " takes " + timeTakenToCross);
                 /**
                  *  Checking if Orbit1 for this vehicle is the Fastest Route to cross
                  */
@@ -81,7 +81,7 @@ public class Geektrust {
 
                 Vehicle vehicleOrbit2 = new Vehicle(vehicleMmHr,vehicleCross,orbit2,"ORBIT2",vehicle);
                 timeTakenToCross = vehicleOrbit2.getTimeTakenToCross();
-                System.out.println(vehicleOrbit2.getType() + " takes " + timeTakenToCross);
+//                System.out.println(vehicleOrbit2.getType() + " takes " + timeTakenToCross);
                 /**
                  *  Checking if Orbit2 for this vehicle is the Fastest Route to cross
                  */
