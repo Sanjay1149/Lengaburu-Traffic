@@ -30,6 +30,7 @@ public class Geektrust {
     }
 
     public static void main(String[] args) {
+        String filePath = args[0];
         int timeTakenToCross;
         /**
          * Initializing the Vehicle Details
@@ -39,7 +40,7 @@ public class Geektrust {
             /**
              *  Reading Input from the Input File
              */
-            FileInputStream inputStream = new FileInputStream(new File("src/Computing/input.txt").getAbsolutePath());
+            FileInputStream inputStream = new FileInputStream(filePath);
             BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
             String[] input =  br.readLine().split(" ");
             inputStream.close();
@@ -69,7 +70,7 @@ public class Geektrust {
 
                 Vehicle vehicleOrbit1 = new Vehicle(vehicleMmHr,vehicleCross,orbit1,"ORBIT1",vehicle);
                 timeTakenToCross = vehicleOrbit1.getTimeTakenToCross();
-//                System.out.println(vehicleOrbit1.getType() + " takes " + timeTakenToCross);
+                System.out.println(vehicleOrbit1.getType() + " takes " + timeTakenToCross);
                 /**
                  *  Checking if Orbit1 for this vehicle is the Fastest Route to cross
                  */
@@ -80,7 +81,7 @@ public class Geektrust {
 
                 Vehicle vehicleOrbit2 = new Vehicle(vehicleMmHr,vehicleCross,orbit2,"ORBIT2",vehicle);
                 timeTakenToCross = vehicleOrbit2.getTimeTakenToCross();
-//                System.out.println(vehicleOrbit2.getType() + " takes " + timeTakenToCross);
+                System.out.println(vehicleOrbit2.getType() + " takes " + timeTakenToCross);
                 /**
                  *  Checking if Orbit2 for this vehicle is the Fastest Route to cross
                  */
@@ -90,15 +91,14 @@ public class Geektrust {
                 }
 
             }
-//            System.out.println("SOLUTION IS ");
-//            System.out.println(bestVehicle.getType() + " " + bestVehicle.getOrbitName());
 
             /**
              *  Writing to the Output File
              */
-            BufferedWriter fileOut = new BufferedWriter(new FileWriter(new File("src/Computing/output.txt").getAbsolutePath()));
+            System.out.println(bestVehicle.getType() + " " + bestVehicle.getOrbitName());
+            /*BufferedWriter fileOut = new BufferedWriter(new FileWriter(filePath));
             fileOut.write(bestVehicle.getType() + " " + bestVehicle.getOrbitName());
-            fileOut.close();
+            fileOut.close();*/
 
         }catch(Exception exception){
             System.out.println(exception);
